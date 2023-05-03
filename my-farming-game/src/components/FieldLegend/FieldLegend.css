@@ -1,0 +1,24 @@
+.fieldLegendContainer {
+    margin: 45px 150px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.fieldLegendContainer__house,
+.fieldLegendContainer__forest,
+.fieldLegendContainer__land,
+.fieldLegendContainer__water {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 5px;
+}
+
+.fieldLegendContainer__title {
+	font-size: 36px;
+    text-align: center;
+}
+
+.fieldLegendContainer__label {
+	text-align: center;
+	margin: 15% 0;
+}

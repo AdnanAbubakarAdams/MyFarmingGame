@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+// classes from utils
+import Field from './utils/Field';
+
+// components
+import FieldTile from './components/FieldTile/FieldTile';
+
+// Css
 import './App.css';
+import FieldLegend from './components/FieldLegend/FieldLegend';
+
+const field = new Field();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="field">
+        {field.tiles.map(fieldRow => {
+          return (<div className="field__row">
+            {fieldRow.map(tile => {
+              return <FieldTile tile={tile} />
+            })}
+          </div>)
+        })}
+      </div>
+      <div className='legend'>
+        <FieldLegend />
+      </div>
     </div>
   );
 }
