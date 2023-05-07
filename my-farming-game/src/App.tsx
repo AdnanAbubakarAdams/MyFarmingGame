@@ -2,11 +2,11 @@
 import Field from './utils/Field';
 
 // components
-import FieldTile from './components/FieldTile/FieldTile';
+import FieldTile from './components//FieldTile/FieldTile';
 
 // Css
 import './App.css';
-import FieldLegend from './components/FieldLegend/FieldLegend';
+import FieldLegend from "./components/FieldLegend/FieldLegend";
 
 const field = new Field();
 
